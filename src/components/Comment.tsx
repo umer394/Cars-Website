@@ -2,15 +2,9 @@
 import { Textarea } from "./ui/textarea"
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"
-import { useState,ChangeEvent, useEffect, FormEvent } from "react";
+import { useState,ChangeEvent, FormEvent } from "react";
 
 
-type Comment = {
-    id: string;
-    name: string;
-    comment: string;
-    timestamp: any; 
-};
 export default function Comment(){
 
     const [name,SetName] = useState<string>("")
